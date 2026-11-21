@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Your Name</title>
+  <meta name="description" content="Browse projects by Your Name. Search by title or technology.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <span class="logo">Your Name</span>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="btn btn-outline" id="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+    </nav>
+  </header>
+  <main>
+    <section class="container" aria-labelledby="projects-title">
+      <h1 id="projects-title">Projects</h1>
+      <div class="toolbar">
+        <div style="flex:2">
+          <label class="visually-hidden" for="search">Search by title or technology</label>
+          <input id="search" type="search" placeholder="Search by title or technology">
+        </div>
+        <div style="flex:1">
+          <label class="visually-hidden" for="tech-filter">Filter by technology</label>
+          <select id="tech-filter"><option value="">All technologies</option></select>
+        </div>
+      </div>
+      <p id="result-count" class="status" aria-live="polite"></p>
+      <ul id="project-grid" class="project-grid"></ul>
+      <p id="empty-state" class="status" hidden>No projects found</p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <ul>
+        <li><a href="https://github.com/your-username">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/your-username">LinkedIn</a></li>
+        <li><a href="mailto:you@example.com">Email</a></li>
+      </ul>
+      <p>&copy; 2026 Your Name. Built for CS-554.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
