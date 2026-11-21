@@ -65,3 +65,13 @@ input[aria-invalid="true"],textarea[aria-invalid="true"]{border-color:var(--erro
 .site-footer{border-top:1px solid var(--border);padding-block:var(--space-lg);color:var(--muted)}
 .site-footer ul{display:flex;flex-wrap:wrap;gap:var(--space);list-style:none;padding:0;margin:0 0 var(--space)}
 .visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* Navigation Hover Effects */
+
+nav a {
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
